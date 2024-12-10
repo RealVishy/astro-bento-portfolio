@@ -26,26 +26,26 @@ const schema =
     ? {
         "@context": "http://schema.org",
         "@type": "Person",
-        name: "Gianmarco",
-        url: "https://gianmarco.xyz",
+        name: "Vishwas Parpattegar",
+        url: "https://realvishy.github.io",
         sameAs: [
-          "https://www.linkedin.com/in/gianmarco-cavallo",
-          "https://github.com/Ladvace",
+          "https://www.linkedin.com/in/vishwas-parpattegar-3b027a228",
+          "https://github.com/RealVishy",
         ],
-        image: "https://gianmarco.xyz/og-image.png",
-        jobTitle: "Freelance Frontend Developer",
+        image: "https://realvishy.github.io/og-image.png",
+        jobTitle: "Software Engineering Student",
         worksFor: {
           "@type": "Organization",
-          name: "Self-Employed",
+          name: "Student",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Italy",
-            addressCountry: "IT",
+            addressLocality: "Sydney",
+            addressCountry: "AU",
           },
         },
         nationality: {
           "@type": "Country",
-          name: "Italy",
+          name: "Australia",
         },
       }
     : {
@@ -53,26 +53,26 @@ const schema =
         "@type": "BlogPosting",
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `https://gianmarco.xyz/blog/${slug}`,
+          "@id": `https://realvishy.github.io/blog/${slug}`,
         },
         headline: frontmatter?.title || title,
         description: frontmatter?.description || title,
-        image: "https://gianmarco.xyz/og-image.png", //TODO: dynamic
+        image: "https://realvishy.github.io/og-image.png",
         author: {
           "@type": "Person",
-          name: "Gianmarco",
-          url: "https://gianmarco.xyz",
+          name: "Vishwas Parpattegar",
+          url: "https://realvishy.github.io",
           sameAs: [
-            "https://www.linkedin.com/in/gianmarco-cavallo",
-            "https://github.com/Ladvace",
+            "https://www.linkedin.com/in/vishwas-parpattegar-3b027a228",
+            "https://github.com/RealVishy",
           ],
         },
         publisher: {
           "@type": "Organization",
-          name: "Gianmarco",
+          name: "Vishwas Parpattegar",
           logo: {
             "@type": "ImageObject",
-            url: "https://gianmarco.xyz/og-image.png",
+            url: "https://realvishy.github.io/og-image.png",
           },
         },
         datePublished: frontmatter?.pubDate || new Date().toISOString(),
